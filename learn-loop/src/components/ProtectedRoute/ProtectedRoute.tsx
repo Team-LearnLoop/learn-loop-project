@@ -13,7 +13,7 @@ import {useSelector} from 'react-redux';
 // by checking req.isAuthenticated for authentication
 // and by checking req.user for authorization
 
-function ProtectedRoute({ component, children, ...props }) {
+function ProtectedRoute({ component, children, ...props }: any) {
   const user = useSelector((store) => store.user.userReducer);
 
   // Component may be passed in as a "component" prop,
