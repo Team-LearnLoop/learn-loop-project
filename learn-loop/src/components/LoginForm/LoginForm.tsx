@@ -6,10 +6,10 @@ import TextField from '@mui/material/TextField';
 function LoginForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const errors = useSelector(store => store.errors);
+  const errors = useSelector((store: any) => store.errors);
   const dispatch = useDispatch();
 
-  const login = (event) => {
+  const login = (event: any) => {
     event.preventDefault();
 
     if (username && password) {

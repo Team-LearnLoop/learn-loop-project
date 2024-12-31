@@ -5,10 +5,10 @@ import "./Nav.css";
 import { useSelector, useDispatch } from "react-redux";
 import Box from "@mui/material/Box";
 
-function Nav(props) {
+function Nav(props: any) {
   const dispatch = useDispatch();
 
-  const user = useSelector((store) => store.user.userReducer);
+  const user = useSelector((store: any) => store.user.userReducer);
 
   return (
     <div className="nav">

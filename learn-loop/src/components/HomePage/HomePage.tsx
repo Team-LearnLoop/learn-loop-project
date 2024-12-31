@@ -8,7 +8,7 @@ function HomePage() {
   const history = useHistory();
   const dispatch = useDispatch();
 
-  const user = useSelector((store) => store.user.userReducer);
+  const user = useSelector((store: any) => store.user.userReducer);
 
   return (
     <div>

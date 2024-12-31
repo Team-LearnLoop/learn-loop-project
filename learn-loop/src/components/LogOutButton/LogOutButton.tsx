@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-function LogOutButton(props) {
+function LogOutButton(props: any) {
   const dispatch = useDispatch();
   return (
     <p
