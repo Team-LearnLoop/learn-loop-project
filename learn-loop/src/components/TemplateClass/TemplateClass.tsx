@@ -23,7 +23,7 @@ class TemplateClass extends Component {
   }
 }
 
-const mapStoreToProps = (reduxStore) => {
+const mapStoreToProps = (reduxStore: any) => {
   return {
     store: reduxStore,
   };
